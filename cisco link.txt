@@ -1,0 +1,19 @@
+# Cisco downloadind link:
+
+CiscoPacketTracer_821_Windows_64bit
+
+
+# Cisco user name password:
+
+# rasika:
+    id => bulerasika@gmail.com
+    password => RbYc@2001
+
+# yukta:
+    id : yuktachaudhari110@gmail.com
+    password: yukta@12262000.Com
+
+
+
+
+
