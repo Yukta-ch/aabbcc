@@ -1,0 +1,27 @@
+Prerequisites BEFORE DOWNLOADING DOCKER:
+1. Click Quit Button To Close Docker
+2. Search "turn windows features on or off"
+3. Click "Turn Windows features on or off"
+4. Scroll Down Until You Find Windows Hypervisor Platform
+5. Tick Windows Hypervisor Platform & Also Make Sure Virtual Machine Platform Is Ticked
+6. Click OK Button
+7. Click Close Button
+8. Search PowerShell
+9. Right-click on "Windows PowerShell" & Click Run as Administrator
+10. Or Right-Click On Start Button & Click "Windows Powershell (Admin)"
+11. Type "dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart" & Hit Enter on Your Keyboard 
+12. Close Powershell or Minimize It
+13. Open Your Browser
+14. Paste The Link In Address Bar & Hit Enter On Your Keyboard:- https://aka.ms/wsl2kernel
+15. Click "Wsl2 Linux Kernel Update Package For X64 Machines" To Download Wsl 2
+16. Wait For Download To Finish
+17. Now Click To Install Wsl 2
+18. Click Finish Button
+19. Close Your Browser
+20. Copy Code:- wsl --set-default-version 2
+21. Again Open Powershell As Run As Administrator
+22. Now Type The Code That We Previously Copied & Then Hit Enter on Your Keyboard
+23. Close PowerShell
+24. Restart Your Computer
+25. Now Open Docker
+26. Done!

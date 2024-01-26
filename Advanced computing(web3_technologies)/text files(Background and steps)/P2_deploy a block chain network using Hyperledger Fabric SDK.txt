@@ -1,0 +1,96 @@
+Practical 2
+Aim: Create and deploy a block chain network using Hyperledger Fabric SDK for Java.
+Background Information:
+
+Block chain network:
+•Blockchain is a type of shared database that differs from a typical database in the way it stores information. 
+•Blockchains store data in blocks linked together via cryptography.
+
+Hyperledger Fabric: 
+•Hyperledger Fabric is an open-source platform for developing blockchain applications. 
+•It is designed to support the development of scalable and secure blockchain applications and is suitable for a wide range of use cases, including supply chain management, identity management, and financial services.
+
+Hyperledger Fabric SDK:
+•Hyperledger Fabric SDK is a software development kit (SDK) that provides a set of tools and libraries for building applications that interact with a Hyperledger Fabric blockchain. 
+•The Hyperledger Fabric SDK is available for a variety of programming languages, including Java, Go, Node.js, and Python.
+
+Hyperledger Fabric SDK for Java:
+•The Hyperledger Fabric SDK for Java is a set of Java libraries that provides a Java API for interacting with a Hyperledger Fabric blockchain. 
+•It allows Java developers to build applications that can interact with a Hyperledger Fabric network, such as by submitting transactions or querying the blockchain.
+•The Hyperledger Fabric Docker images and samples, you can deploy a test network by using scripts that are provided in the fabric-samples repository.
+•The network is meant to be used only as a tool for education and testing and not as a model for how to set up a network
+
+Prerequisites: To use the Hyperledger Fabric SDK for Java, you will need to have the following prerequisites installed:
+•Java: You will need to have a recent version of the Java Development Kit (JDK) installed on your machine.
+•Curl
+•Docker
+Contract APIs: To develop smart contracts executed on a Fabric Network.
+Application SDKS: To develop your blockchain application.
+The Application: Blockchain application will utilize the Application SDKs to call smart contracts running on a Fabric network.
+
+Installation steps:
+1.Java Development Kit (JDK) 11 or later: Install JDK 11 or a later version on your system. You can download it from 
+           Java Downloads | Oracle	
+2.Install Ubuntu app from windows store: Open the Microsoft Store and install Ubuntu 20.04.02 LTS .
+3.Open Windows Terminal (Command Prompt) and add a new ubuntu tab.
+  Now “Ubuntu 20.04.02 LTS” is linked to Windows terminal.
+4.Updating and installing basic packages for Ubuntu.
+          #sudo apt update && sudo apt upgrade
+5.Docker Desktop 4.25.2 or later (if using Dockized environment):
+          Install Docker Desktop 4.25.2 or a later version if you want to use the 
+          Dockerized environment. You can download it from
+      Docker Desktop: The #1 Containerization Tool for Developers | Docker
+Enable Docker for Ubuntu
+ 	Go to Settings
+ 	Resources
+ 	WSL integration
+ 	Enable Ubuntu-20.04
+ 	Then hit Apply & restart
+ 	After Enabling this we will get docker in the ubuntu command line.
+
+6.Run following command to check if you are able to access it on Ubuntu.
+     #docker version
+     #docker compose version
+7.Run following command to install and update basic packages on Ubuntu.
+           #sudo apt update
+          #sudo apt upgrade 
+8.We will check if curl exist, if curl doesn’t exist we will install it with 
+          #curl –v
+         #sudo apt-get install curl 
+9.We will check if go exist 
+           #go version
+    If go doesn’t exist we will install it with
+    #sudo wget https://golang.org/dl/go1.16.3.linux-amd64.tar.gz
+    Checking if go is installed
+10.This command will extract zip file at the downloaded location.
+#tar xvf go1.16.3.linux-amd64.tar.gz
+11.Now we will set the path using following command
+           #export GOPATH=$HOME/go
+          #export PATH=$PATH:$GOPATH/bin
+         Run the following command to verify that Go lang is installed successfully.
+         #go version
+12.Run the following command to if git is installed
+      #git –version
+13.Install Hyperledger Fabric and Fabric samples.
+14.Create a directory with following command
+Creating a directory: mkdir -p $HOME/go/src/github.com/
+Changing the directory: cd $HOME/go/src/github.com/
+15.	Download the latest release of fabric samples and docker images.
+Run following command under $HOME/go/src/github.com/ directory.
+Cloning Hyperledger Fabric:
+#curl -sSL https://bit.ly/2ysbOFE | bash -s 1.4.4
+16. Go to test-network.
+#cd test-network
+#ll
+#pwd
+# cd first-network/
+#ls
+17.Generate ‘mychannel’.
+          #./byfn.sh generate
+18.Running following will boot up fabric test network.
+#./byfn.sh up
+19.Windows Security screen will be appeared on the screen => Click on Allow.
+20.Final output:
+Conclusion: 
+Thus, blockchain network using Hyperledger Fabric SDK for Java Set up is created and the channel initializes successfully.
+
