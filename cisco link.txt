@@ -1,7 +1,10 @@
 # Cisco downloadind link:
+https://www.computernetworkingnotes.com/ccna-study-guide/download-packet-tracer-for-windows-and-linux.html
 
-CiscoPacketTracer_821_Windows_64bit
+--> click on these link-->
+Cisco Packet Tracer 8.2.1 download link for Windows (10, 8.1, 7.0) 64 bits edition
 
+-->(CiscoPacketTracer_821_Windows_64bit)
 
 # Cisco user name password:
 
