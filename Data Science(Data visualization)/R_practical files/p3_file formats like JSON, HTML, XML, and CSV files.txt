@@ -5,17 +5,18 @@ library("rjson")
 library("XML")
 
 # Read data from JSON file
-json_data <-fromJSON("File Path")
+json_data <- fromJSON(file = "C:\\Users\\pravin  bule\\Downloads\\Data Science(Data visualization)\\R_practical files\\data_json.json")
 
 # Read data from HTML file
-html_data <- readHTMLTable("File Path")
+html_data <- readHTMLTable("C:\\Users\\pravin  bule\\Downloads\\Data Science(Data visualization)\\R_practical files\\data_html.html")
 
 # Read data from XML filed
-xml_data<- xmlParse(" File Path")
+xml_data<- xmlParse("C:\\Users\\pravin  bule\\Downloads\\Data Science(Data visualization)\\R_practical files\\data_xml.xml")
 Xml_data <- xmlToList(xml_data)
 
 # Rcad data from CSV file
-csv_data <- read.csv("File Path")
+csv_data <- read.csv("C:\\Users\\pravin  bule\\Downloads\\Data Science(Data visualization)\\R_practical files\\data_csv.csv")
+
 
 # Check for missing data
 missing_data<- sapply(json_data, function(x) sum(is.na(x)))
@@ -34,6 +35,13 @@ print(json_data)
 print(html_data)
 print(xml_data)
 print(csv_data)
+
+
+
+
+
+
+
 
 
 
