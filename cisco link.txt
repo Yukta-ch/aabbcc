@@ -6,15 +6,9 @@ Cisco Packet Tracer 8.2.1 download link for Windows (10, 8.1, 7.0) 64 bits editi
 
 -->(CiscoPacketTracer_821_Windows_64bit)
 
-# Cisco user name password:
 
-# rasika:
-    id => bulerasika@gmail.com
-    password => RbYc@2001
 
-# yukta:
-    id : yuktachaudhari110@gmail.com
-    password: yukta@12262000.Com
+
 
 
 
